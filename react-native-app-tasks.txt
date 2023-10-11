@@ -1,0 +1,27 @@
+npm install express => Framework de nodejs
+npm install mysql2 => Para conectarce con mysql 
+npm install morgan => Nos permite ver por consola las peticiones que van llegando 
+npm install cors => 
+npm install swagger-jsdoc =>
+npm install swagger-ui-express =>Nos permite tener una interfaz grafica 
+npm i dotenv => Sirve para crear variables de entorno.
+
+npm i express mysql2 cors swagger-jsdoc swagger-ui-express dotenv
+npm i @babel/core => Este es el programa que permite convertir codigo
+npm i @babel/cli => Es una herramienta de consola que nos permite manipular babel
+npm i @babel/preset-env => Esto es para decirle que vamos a estar convirtiendo codigo de JavaScript Moderno a JavaScrip actual
+@babel/node => Esto es para decirle que ejecute a tarves de node 
+-D => Para decirle que son dependencias de desarrollo 
+npm i @babel/core @babel/cli @babel/preset-env @babel/node -D
+
+babel => Combierte codigo a codigo anterior para 
+
+
+REACT NATIVE 
+npm install -g expo-cli => Instalamos esto de manera global en el computador 
+npx create-expo-app my-app => Creamos un proyecto de expo y react native
+npm i @react-navigation/stack => 
+npm install @react-navigation/native => Nos Permite separar las paginas y navegar entre ellas
+npx expo install react-native-screens react-native-safe-area-context => Dependecias necesarias para hacer la navegacion
+
+rnfe => Sniped par generar un componente en react 

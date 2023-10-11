@@ -1,0 +1,218 @@
+Los datos se guardan en un JASON todos son objetos 
+cada coleccion son documentos en formato Jason si no que mongodb 
+les llama documentos
+
+db              => Para ver la base de datos que estamos utilizado
+show dbs        => Para ver las bases de datos que tenemos 
+help            => Comando para ver comandos y obtener una ayuda
+use webstore    => Para crear una base de datos y automaticamente la usa
+db.dropDatabase() => Para eliminar una base de datos , nos aseguramos de que estemos usandola 
+
+La base de datos no sera creada amenos que insertemos un dato 
+
+db.createCollection("Products") => Para crear una collección 
+show collections  => Para ver las conexiones que tenemos dentro de la base de datos 
+db.Products.insert({"name":"Lapto"}) => Para isertar un dato
+db.products.drop()  =>  Para eliminar una coleccion de la base de datos 
+
+Ejmplos de un documento en mongoBD en realidad son objetos de javaScript solo que 
+mongoDB los conoce como documentos
+
+
+{"id_area":1,"name":"Administracion","ubicacion":"lima"}
+{"id_area":2,"name":"Informatica","ubicacion":"Jaen"}
+{"id_area":3,"name":"Electronica","ubicacion":"Argentina"} 
+
+{
+     "name":"lapto",
+     "preci":40.2,
+     "active":true,
+     "create_at": new Date("12/12/2023"),
+     "somedata":[1,"a",[1,2,3,4]],
+}
+
+db.products.find() => Para imprimir todos los datos de una colections
+db.products.find().pretty() => Para imprimir los datos pero de una forma mas ordenada 
+
+En mongoDB podemos utilizar diferentes esquemas 
+Tambien podemos insertar muchos datos a las vez
+
+db.products.insert([
+     {
+	"name":"mouse",
+	"description":"razer mouse",
+	"tags":["computers","gaming"],
+	"quantity":14,
+	"create_at":new Date()
+     },
+     {
+	"name":"monitor",
+	"description":"lg monitor",
+	"tags":["computers","gaming"],
+	"quantity":14,
+	"create_at":new Date()
+     }
+])
+
+insert() => Insertar
+find() => Listar
+update() => Editar
+remove() => Eliminar
+ 
+
+db.products.find({name:"mouse"})  => Para hacer una busqueda de un solo producto en mongoDB
+db.products.findOne({tags:"computers"})  => Nos devuelve el primer dato 
+db.products.findOne({"tags":"computers"},{"name":1,"description":1,"_id":0}) => para extraer solo algunos datos que queremos 
+--------en este ejemplo traemos solo el nombre y la descripción------
+------------{ name: 'mouse', description: 'razer mouse' }------------
+db.products.find({"tags":"computers"}).sort({name:1}) => Nos devuelve los datos ordenados alfaveticamente
+db.products.find().limit(2) => Para imprimir un limite de datos 
+db.Areas.find({Nombre:{$in:["Electrotecnica","Mecanica","Estudios generales "]}}) => Nos devuelve los datos donde los nombres coincidan
+db.products.count()  => Para contar los datos 
+db.products.find().forEach(product => print("Product Name: "+ product.name))  => Con el forEach recorremos cada dato como javaScript 
+db.products.update({"name":"laptop"},{$set:{"description":"lg gram lapto"}})  => Para agragar un nuevo atributo a nuestro objeto
+db.products.update({"name":"mouse"},{$set:{"quantity":8}})   => Para editar un dato 
+---Ojo el producto Desktop no existe----
+db.products.update({"name":"Desktop"},{$set:{"description":"Desktop gaming"}},{upsert:true})=> Para actualizar un producto que no existe pero aun asi lo queremos actualiazar
+db.products.update({"name":"keyboard" },{ $inc: {"price": 0.01 }}) => Para incrementar un solo dato dato 
+db.products.update({"name":"laptop"},{$rename:{"name":"nombre"}})  => Renombrar el nombre de las propiedades 
+db.products.remove({"name":"keyboard"}) => Esto es para eliminar un dato de una collection
+db.products.remove({}) => Si le pasamos un objeto vacio eliminara todos los datos que estan dentro de la collection 
+
+---------mogodb compas---------
+
+Es una interfaz grafica para mongodb podemos usar esta interfas o el shell de mongo tambien 
+
+
+Operadores en mongodb:
+
+db.products.find({ precio:{ $eq:10 }}) =>Busca a todos los productos que tengan precio 10
+db.products.find({ precio:{ $ne:10 }}) =>Busca a todos lo productos que no tengan precio 10
+db.Cargos.find({precio:{$gt:10}})=> Busca todos los productos que su precio sea mayor a 10
+db.Cargos.find({precio:{$lt:5000}}) => Busca todos los productos que su precio sea mayor a 10
+db.Mascotas.find({origen:{$exists:true}}) => Esto devuelve a todos los doumentos que si tengan el campo origen 
+db.Mascotas.find({origen:{$exists:false}}) => Esto devuelve a todos los que no tengan el campo origen 
+db.Mascotas.find({nombre:{$regex:/^L}}) => Nos debuelve todas las mascotas que su nombre empiece con L
+db.Mascotas.find({nombre:{$regex:/L/i}}) => Nos devuelve todas las mascotas que su nombre empiece con L y la i indica que haceptara mayusculas y minusculas
+db.Mascotas.find({nombre:{$not:/L/}}) => Nos devuelve a todos los documentos que no contenga la letra L 
+db.Mascotas.find({nombre:{$regex:'a$'}}) => Nos devuelve a todos los documentos que terminen en la letra a
+db.Mascotas.find({nombre:{$not:/a$/}})=> Nos devuelve a todos los documnetos que no terminen el la letra a 
+db.Mascotas.find({nombre:{$regex:'[LBM]'}})=> Nos devuelve a los que el nombre empiecen con L,B,o M 
+db.Mascotas.find({nombre:{$not:/[LBM]/}}) => Nos devuelve a los que NO empiezen con L,B,o M
+
+
+PARA CARGAR UN SCRIPT
+mongosh la02.js
+
+Actualizar un dato con update:
+db.propietarios.updateOne(
+  {_id:10},
+  {
+    $set:{
+      vehiculos:[
+        {
+          placa: 'C7P-454', 
+          marca: 'Nissan', 
+          modelo: 'Sentra',
+          ano:2008,
+          color: 'Plata', 
+          estado: 'A',
+        },
+        {
+          placa: 'E59-666', 
+          marca: 'Toyota', 
+          modelo: 'Corolla',
+          ano:2002,
+          color: 'Azul', 
+          estado: 'A',
+        }
+      ]
+    }
+  }
+)
+
+
+
+Siempre que queramos actualizar un dato debemos pasarle el query del 
+dato que esta dentro por ejemplo placa hace referencia a lo que esta dentro de 
+vehiculos y el id es del propietario
+
+Documento a modificar=>
+[
+  {
+    _id: 9,
+    nombres: 'Cecilia',
+    apellidos: 'Valenzuela',
+    sexo: 'F',
+    departamento: '204',
+    telefono: '350101',
+    celular: '959998976',
+    estado: 'A',
+    Fecha_Nac: '17-set-70',
+    vehiculos: [
+      {
+        placa: 'C7P-454',
+        marca: 'Nissan',
+        modelo: 'Sentra',
+        ano: 2008,
+        color: 'Plata',
+        estado: 'A'
+      }
+    ]
+  }
+]
+
+
+Modificamos : usamos el valor de placa como referencia pal query
+
+db.propietarios.updateOne(
+  { _id: 9,"vehiculos.placa": 'C7P-454'},
+  {
+    $set:{ 
+          'vehiculos.$.placa': 'B7L-634', 
+          'vehiculos.$.marca': 'Toyota', 
+          'vehiculos.$.modelo': 'B7L-634',
+          'vehiculos.$.ano':2012,
+          'vehiculos.$.color': 'Rojo', 
+          'vehiculos.$.estado': 'A',
+        }
+  }
+)
+
+El operador $pull nos permite eliminar un elemento de un campo de tipo arreglo 
+db.propietarios.update(
+  {nombres:'Gerardo', apellidos:'Lopez'},
+  {
+    $pull: 
+    {vehiculos: {placa:'C5H-908'}
+  }
+} 
+);
+
+
+$gte:  devuelve mayor p igual que 
+$lt : meno o igual que 
+
+80
+70
+
+Unir dos colecciones:
+db.Docentes.aggregate([ 
+    {$lookup:
+        { from:"Departamentos",
+        localField:'_id_dep',
+        foreignField:'_id',
+        as:'Departamentos'
+    }
+},
+{$unwind:'$Departamentos'},
+{
+    $project:{
+        nombres:1,
+        nombre_jefe:'$Departamentos.jefe.nombre',
+        nombre_programas:'$Departamentos.programas.nombre',
+        planer_nombre:'$Departamentos.programas.planer.nombre'
+    }
+}
+]);
+

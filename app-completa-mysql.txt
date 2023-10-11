@@ -1,0 +1,27 @@
+npm init --yes  =>  Apartir de aqui nosotros podremos instalar los modulos que bamos a utilizar
+
+npm i express express-handlebars express-session mysql express-mysql-session morgan bcryptjs passport 
+npm install express => Framework de node que nos evita estar escribiendo codigo repetitivo
+npm install morgan => Es un modulo que nos permite mostrar por consola las peticiones que van llegando al servidor 
+npm install express-handlebars => es un motor de plantillas de express
+npm install mysql => Modulo para conectarse a la base de datos utilizaremos mysql desde consola
+npm install timeago.js => Nos permite trabajar con las fechas y los tiempos
+npm install express-session => Para guardar una sesion dentro de express
+npm install express-mysql-session => Modulo que nos permita guardar las sesiones dentro de mysql
+npm install connect-flash => Para enviar mendajes entre multiples vistas
+
+-----Desde aqui empieza el login 
+
+npm install passport  => tiene una enorme cantidad de metodos de autenticaciòn para podernos logiar o usando google
+npm install passport-local => Estos dos modulo trabajan juntos 
+npm install bcryptjs => Nos ayudara a cifrar las contraseñas 
+
+express-session => 
+passport => 
+passport-local =>
+express-validator => es poder validar los datos que nos evia el usuario por ejemplo si no nos envia la contraseña
+
+app.use(express.json) => Aqui estaa el error siuuuuu
+error por que la carpeta partials no existia y tube que crearla 
+Le puse la extencion index.js a los routes en require 
+

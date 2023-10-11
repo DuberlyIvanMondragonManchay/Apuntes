@@ -1,0 +1,2 @@
+mx-auto => El contenido que tenga este container estara centrado
+card text-center => Una targeta con todo su contenido centrado 

@@ -1,0 +1,1 @@
+className='g-4' => Esto es para dar un espacio entre divs (se aplica al padre)

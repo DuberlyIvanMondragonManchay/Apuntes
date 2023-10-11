@@ -1,0 +1,53 @@
+git branch => Para ver en que rama estoy
+git branch rama1 => Para crear una rama 
+git brach -m ramamita1 => Para cambiar el nombre a mi rama
+git checkout ramita1 => Para cambiar de rama 
+git branch -D ramita1 => Para eliminar una rama no se eliminara si estamos paradas en ella 
+touch t.txt => Para crear un archivo 
+git diff master rama1 => Para ver las diferencias entre dos ramas 
+git log --oneline => Para ver el historial de trabajo 
+--TRAER CAMBIOS DE LAS RAMAS--
+es muy importante estar parados en la rama master es muy importante que 
+en el index no haya cambios diferentes ni errores
+git merge rama-footer => Para traernos los cambios a la rama master
+
+
+git clone => Para clonar un repositorio de git 
+git pull origin master  => Traer traer los cambios del repositorio
+ls=> Nos muestra los archivos que tenemos dentro de la carpeta
+---------Procedimiento de elimancion-------------------
+rm archivo1.txt => Este comando sirve para eliminar un archivo 
+git status
+git restore --staged archivo1.txt => Para recuperar un archivo 
+git restore
+------------------------------------------------------------
+rama1 => 
+
+git pull origin main => Actulizar los cambios y traer modificasiones del proyecto remoto
+
+rm -rf .git => Comando para eliminar un repositorio que esta dentro de otro
+
+- Para hacer el download de un branch de remoto primero tienes que asegurarte que exista.
+- Para ver los branches de remoto simplemente tienes que hacer:
+
+git branch -r  => Para ver las ramas antes de bajarlo a local 
+
+git checkout remote-branch => -Luego haces el checkout al branch que desees. Te hará el download y te pondrá en la branch que has indicado:
+
+git fetch --all 
+git remote update
+git log => Para ver los commits y  q para salir 
+
+
+git checkout -b database origin/database 
+
+git remote set-url origin https://github.com/DuberlyIvanMondragonManchay/practica_01.git
+Ignorar carpetas en git
+**/__pycache__/
+.__pycache__/
+/venv
+
+
+git log --oneline --graph 
+
+http://localhost:4000/api/auth/login

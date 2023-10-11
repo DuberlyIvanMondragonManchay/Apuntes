@@ -1,0 +1,18 @@
+docker images => Para ver las imagenes que tenemos en docker
+docker search ubuntu => Para buscar una imagen llamada Ubuntu
+docker pull ubuntu => Para descargar una imagen en este caso ubuntu
+docker run nginx => Creamos un contenedor a partir de una imagen
+docker run -it ubuntu bash => Para abrir el bash de ubuntu
+docker ps => Para ver los procesos
+docker stop welcome-to-docker => Para detener la ejecucion de un contenedor
+docker start welcome-to-docker => Para correr un contenedor
+docker rm 91264641786b => Eliminamos un contenedor
+docker run -p 3000:80 nginx => Ejecutamos esto en el puesto 3000
+docker run -p 80:80 -d nginx => Para que se ejecute pero no se mantenga ejecutado en la consola 
+docker ps -aq => Esto muestra todos los id de los contenedores
+docker rm $(docker ps -aq) => importante solo funciona desde la powerShell en windows y sirve Para eliminar todos los contenedores
+docker stop $(docker ps -aq) => Para parar la ejecucion de todos los contenedores 
+
+docker pull httpd => Esto es la imagen de apache
+docker run -d -p 3306:3306 --name mydatabase mysql => Esto es para usar mysql y asignarle 
+docker run -d -p 3306:3306 --name mydatabase -e MYSQL_ROOT_PASSWORD=duberly2004 mysql => Esto para ejecutar mysql

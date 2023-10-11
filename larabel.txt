@@ -1,0 +1,12 @@
+php artisan serve => Para ejecutar el proyecto
+php artisan db:seed => Para crear los sedders
+php artisan migrate => Para ejecutar las migraciones
+composer dump-autoload => Para refrescar
+php artisan make:controller AlbumController
+php artisan make:controller AlbumController -r  => Esto te crea un controlador con los métodos 
+index() 
+store()
+show()
+edit()
+update()
+destory()

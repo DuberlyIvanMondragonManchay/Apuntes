@@ -1,0 +1,14 @@
+----English---
+Student A: “Usually I get up at 7 am, but on weekends I get up later.
+Student B: “Usually I eat at home, but today I am going to eat at a restaurant.
+Student A: "I usually get to tecsup early but on Monday I was late because of the traffic.
+Student B: “Usually I have lunch at a restaurant, but today I am going to cook.
+Student A: Instead of running, I'm going to skate.
+Student B: "I usually watch TV at night, but tonight I'm going to study English.
+----Spanish---
+Estudiante A: "Normalmente me levanto a las 7 am, pero los fines de semana me levanto más tarde."
+Estudiante B: "Normalmente como en casa, pero hoy voy a comer en un restaurante."
+Estudiante A: "Normalmente llego temprano a Tecsup, pero el lunes llegué tarde debido al tráfico."
+Estudiante B: "Normalmente almuerzo en un restaurante, pero hoy voy a cocinar."
+Estudiante A: "En lugar de correr, voy a patinar."
+Estudiante B: "Normalmente veo televisión por la noche, pero esta noche voy a estudiar inglés."

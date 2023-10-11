@@ -1,0 +1,17 @@
+------Base de datos mongodb------
+Usuario: dimm
+Contraseña: dGMgEiK4g4NrZQR2
+---------------------------------
+
+Agregar trim a los campos del frontend
+
+
+
+
+
+
+
+
+
+
+

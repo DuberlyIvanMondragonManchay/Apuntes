@@ -1,0 +1,7 @@
+@media(min-width:1400px){
+    body{
+        background-size:100%;
+    }
+}
+
+https://getbootstrap.com/docs/4.0/components/scrollspy/#fat

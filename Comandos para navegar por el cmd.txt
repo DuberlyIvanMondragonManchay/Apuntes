@@ -1,0 +1,18 @@
+----------Comando para mover un archivo -------------
+
+move C:\Users\Duberly\Downloads\*.png C:\Users\Duberly\Desktop\wortika\img
+C:\Users\Duberly\Downloads\Group.png
+
+-------Comando para cambiar el nombre de un archivo---------
+
+rename C:\Users\Duberly\Desktop\wortika\img\Group.png wortika-logo.png
+
+echo What is that? archivo1.txt => Crear archivo txt
+type archivo1.txt => Ver el contenido del archivo
+vim archivo2.txt => Editar el archivo 'I' para empezar a editar "esc" y :wq guardar
+rm => Eliminamos archivo.txt
+type archivo2.txt > archivo1.txt => Copiamos el contenido del archivo2 al archivo 1
+
+mkdir => Crear Carpetas
+rd /s /q node_modules => Eliminar carpetas
+touch => para crear un archivo 

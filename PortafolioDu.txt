@@ -1,0 +1,33 @@
+Link del diseño de mi Portfolio
+https://www.figma.com/proto/96nrA8zX6fOU9lXdm6eiS5/Portfolio-Website-Duberly?node-id=122%3A18&scaling=min-zoom&page-id=0%3A1
+
+Librerias 
+
+https://swiperjs.com/get-started
+
+npm i react-router-dom
+npm i react-icons
+npm i react-bootstrap
+npm i bootstrap
+npm i gh-pages -D
+
+
+npm install swiper react-router-dom react-icons react-bootstrap bootstrap @formspree/react gh-pages -D
+
+
+REACT BOOSTRAP
+npm install react-bootstrap bootstrap
+
+GOGLE FONTS
+npm create vite => Creamos my portafolio en vite 
+npm install react-router-dom@6 => Para trabajar con rutas 
+
+Backend
+npm i express nodemon cors morgan mongose
+
+npm i cors: => El modulo cors nos permite comunicar diferentes dominios un ejemplo seria que si tuviera mi servidor ejecutando en el puerto 3000 y mi fronted(Cliente) en el puerto 4000 aqui es donde entra el modulo cors permitiendo que se puedan comunicar.
+npm i morgan => Nos permite ver la url por consola de las tutas que vamos visitando en crome
+npm i mongose => El modelo nos permite trabajar y conectarse con las base de datos mongodb 
+npm i dotenv => Para usar variables de entorno 
+npm i mongoose => Para poder usar mongodb
+Lo midleewres son funciones que se ejecutan antes de recibir inforamcion del navegador

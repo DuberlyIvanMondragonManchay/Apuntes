@@ -1,0 +1,20 @@
+N => Cantidad de veces que se a repetido la muestra
+Rango => Para datos con observaciones menores a 8 se trabaja con rango
+El rango se calcula el maximo menos el minimo
+
+Formulas (MEDIAS):
+LS 
+PROMEDIO DE PROMEDIOS + VALOR DE A2 * PROMEDIO DE RANGOS
+LC
+PROMEDIO DE PROMEDIOS 
+LI
+PROMEDIO DE PROMEDIOS - VALOR DE A2 * PROMEDIO DE RANGOS
+
+
+Formulas (RANGOS):
+LS 
+D4 * PROMEDIO DE RANGOS
+LC
+PROMEDIO DE RANGOS
+LI
+D3 * PROMEDIO DE RANGOS

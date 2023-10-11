@@ -1,0 +1,2 @@
+Bibliotecas que use
+npm i express nodemon

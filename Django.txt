@@ -1,0 +1,41 @@
+python -m django --version
+py -m venv Entorno01 => Crear un entorno virtual
+scripts\activate => Activamos el entorno virtual
+
+django-admin startproject proyecto01 . => Crear un proyecto si le doy un espacio
+y luego un punto al final ya no se creara otra carpeta
+Genérame un resumen psicolaboral de esta entrevista . Debe tener 4 párrafos maximo 200 palabras en total.Si hay algunas palabras mal pronunciadas por parte del entrevistado y le entrevistador como tecnologias o lenguajes de programacion corrigelas.
+Genérame un resumen psicolaboral de esta entrevista . Debe tener 4 párrafos maximo 200 palabras en total
+
+Puedes dar formato a la información proporcionada utilizando HTML para mejorar su presentación
+Aquí tienes solo el contenido que debes pegar dentro del elemento <body> de mi página HTML
+
+cd proyecto01 => Entrar al proyecto01
+python manage.py startapp encuesta => Crear una aplcasion dentro del proyecto
+
+python manage.py runserver => Ejecutar proyecto 01
+python nanage.py check
+pip preeze => Nos permite listar las biblitecas instaladas y sus versiones dentro del entorno virtual
+python manage.py shell
+
+
+pip3 install djangorestframework => Nos facilita el desarrollo de apis en nuestra web 
+pip3 install django-cors-headers => Para comunicarse en diferentes puertos
+ 
+python manage.py makemigrations tasks => Crea las migraciones solo del proyecto tasks
+python manage.py migrate tasks => Esto crea las tablas de solo el proyecto tasks
+python manage.py migrate => Esto creara todas las tablas a usar
+
+python manage.py createsuperuser => Para crear un super usuario duberly Tecsup8082
+pip install coreapi => Sirve para documentar mi api
+
+----Cliente
+npm i react-router-dom axios react-hook-form react-hot-toast
+---Autentication
+pip3 install mysqlclient => 
+pip3 install PyJWT => Para usar Json web tokens
+pip3 install djongo => Para poder usar mongodb como base de datos 
+
+---Requerimientos y dependencias en django---
+pip freeze > requirements.txt => Esto para crear el archivo de requerimientos 
+pip install -r requirements.txt => Esto para instalar los requerimientos

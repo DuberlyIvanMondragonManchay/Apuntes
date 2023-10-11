@@ -1,0 +1,12 @@
+SELECT name FROM v$database; => Para ver las base de datos que tengo
+alter session set "_ORACLE_SCRIPT"=true; => Cuando no nos deja crear un usuario;
+ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED => Para modificar la fecha de espiración
+ALTER USER USER01 ACCOUNT LOCK; => Para 
+DROP USER USER01 CASCADE; => Para eliminar un usuario debemos estar con el usuario system
+SET LINESIZE 200 => Para ordenar los datos al tamaño de la consola
+set pages 100 => Para que se vea una sola pagina
+
+SELECT NOMBRE_EMP AS NOMBRE,FECHA_ING AS FECHA  FROM EMPLEADOS 
+WHERE COD_DEPT = (SELECT COD_DEPT FROM EMPLEADOS WHERE NOMBRE_EMP = ‘&NOMBRE’);
+
+SET SERVEROUTPUT ON; => activar salida DBMS 
