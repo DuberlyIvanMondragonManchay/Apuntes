@@ -25,7 +25,7 @@ pip3 install django-cors-headers => Para comunicarse en diferentes puertos
 python manage.py makemigrations tasks => Crea las migraciones solo del proyecto tasks
 python manage.py migrate tasks => Esto crea las tablas de solo el proyecto tasks
 python manage.py migrate => Esto creara todas las tablas a usar
-
+python manage.py inspectdb > app/models.py => Esto es para cuando tenemos una base de datos ya existente
 python manage.py createsuperuser => Para crear un super usuario duberly Tecsup8082
 pip install coreapi => Sirve para documentar mi api
 
