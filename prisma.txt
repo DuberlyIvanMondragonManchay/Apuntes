@@ -1,0 +1,2 @@
+npm i prisma --save-dev => Instalar prisma
+npx prisma init => Inicilizar prisma
