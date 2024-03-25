@@ -17,3 +17,5 @@ docker pull httpd => Esto es la imagen de apache
 docker run -d -p 3306:3306 --name mydatabase mysql => Esto es para usar mysql y asignarle 
 docker run -d -p 3306:3306 --name mydatabase -e MYSQL_ROOT_PASSWORD=duberly2004 mysql => Esto para ejecutar mysql
 docker exec mymysql /usr/bin/mysqldump -u root --password=duberly2004 db_digcru > backup.sql => Para exportar una base de datos desde un contenedor
+
+https://github.com/gdiazes/docker/blob/main/docker/00Network => Más info
