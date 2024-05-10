@@ -1,0 +1,78 @@
+cat /etc/shells => Nos muestra todos los shell que tenemos en nuestro SO
+echo $SHELL => Es una varible para ver la shell que tenemos
+touch mifile.sh => Crear un archivo en sh
+ls -al mifile.sh => Nos muestra la descripcion del archivo como el autor , fecha de creación y persmiso que tiene
+chmod +x mifile.sh => Para darle permisos para que sea un ejecutable
+
+//Guardar salida
+#! /bin/bash => Indicamos que shell usaremos
+echo "Hola mundo" > hola.txt => Crea un archivo con el texto hola mundo
+cat > hola.txt => Se podrá enscribir en la consola y todo lo que se escriba es guardará en el archivo hola.txt ctr + d para salir
+cat >> hola.txt => El texto no se remplazará si no que se agregará
+#This is a comment => Este es un comentario
+: 'This is a comment'  => Comentario de varias lineas
+
+//Cat delimitador
+//Imprime un texto por consola
+cat << myText
+This is mi text
+in terminal
+myText
+
+//Read
+echo "Ingresa tu edad:"
+read age => Es como un input para leer datos de entrada
+echo "Esta es tu edad: $age" => Imprimimos la varible de entrada
+
+//Condicionales
+//Creamos una variable y no olvidemos cerrar el fi
+age=10
+if [ $age -eq 10 ]
+then
+    echo "Eres un adulto"
+elif (( $age >= 17 ))
+then
+    echo "Casi eres un adulto"
+else
+    echo "Eres un niño"
+fi
+
+if ((age > 18)) => Otra forma de usar el if
+
+-eq => Igual
+-gt => Menor que
+-lt => Menor que
+-ge => Mayor o igual
+-le => Menor o igual
+
+//Operadores logicos
+&& => Operador and
+|| => Operador or
+
+age=10
+if [ $age -gt 18 ] && [ $age -lt 40 ]
+then 
+    echo "Edad válida"
+else
+    echo "Edad no válida"
+fi
+
+if [[ $age -gt 18 && $age -lt 40 ]] => Otra forma de trabajar con operadores lógicos
+if [[ $age -gt 18 || $age -lt 40 ]] => Operador and
+
+//Case
+echo "Escoje un número entre 1 o 2"
+read valor
+case $valor in 
+    1)
+        echo "Tu escogiste el número 1"
+    ;;
+    2)
+        echo "Tu escogiste el número 2"
+    ;;
+    *)
+        echo "Valor incorrecto"
+    ;;
+esac
+
+//Loops
