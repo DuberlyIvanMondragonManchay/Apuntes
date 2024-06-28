@@ -49,5 +49,6 @@ Ignorar carpetas en git
 
 
 git log --oneline --graph 
+git reset --soft HEAD~1 => Eliminar el último commit pero mantener los cambios
 
 http://localhost:4000/api/auth/login
