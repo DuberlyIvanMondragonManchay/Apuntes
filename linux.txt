@@ -1,2 +1,4 @@
 sudo apt remove --purge => Eliminar un paquete 
 sudo apt autoremove => Eliminar las depenmdencias que ya no se usan
+whoami => Ver el usuario con el que estamos
+neofetch => Ver las caracteristicas de Sistema Operativo
