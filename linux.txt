@@ -2,3 +2,8 @@ sudo apt remove --purge => Eliminar un paquete
 sudo apt autoremove => Eliminar las depenmdencias que ya no se usan
 whoami => Ver el usuario con el que estamos
 neofetch => Ver las caracteristicas de Sistema Operativo
+#---Formatear un USB----
+df => Lista los medios y discos que tenemos conectados
+sudo umount => Desmotamos el USB
+sudo mkfs.vfat -n 'du' -I /dev/sdb1 => Formateamos el USB
+------------------------
