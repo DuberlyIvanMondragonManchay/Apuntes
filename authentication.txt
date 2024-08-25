@@ -1,0 +1,2 @@
+Proxy HTTP => Es una herramienta que se usa en el hacking etico en paginas web con el fin de interceptar el trafico de red.
+burpsuite --help => Herramienta para pentesting
