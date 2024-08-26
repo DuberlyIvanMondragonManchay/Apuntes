@@ -1,0 +1,13 @@
+Instalar R
+sudo apt update
+sudo apt install r-base => !Importante eliminar los repos que causas problemas
+print("Hello word") => Imprimir un mensaje por consola
+q() o quit()=> Salir de la consola de R
+ncol(data) =>Devuelve el número de columnas del objeto
+nrow(data) => Devuevel el número de filas del objeto
+install.packages("dplyr") => Libreria que nos permite hacer el filtrado de datos
+new_data = filter(data,Genero=="Masculino") => Filtrar datos y obtener un nuevo objeto
+
+https://rsanchezs.gitbooks.io/rprogramming/content/chapter9/filter.html =>Operadores logicos R
+
+nrow(filter(data,Ingreso>5.0 & Sucursal=="San Isidro")) 
