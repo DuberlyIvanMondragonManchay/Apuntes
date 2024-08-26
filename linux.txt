@@ -7,3 +7,10 @@ df => Lista los medios y discos que tenemos conectados
 sudo umount => Desmotamos el USB
 sudo mkfs.vfat -n 'du' -I /dev/sdb1 => Formateamos el USB
 ------------------------
+
+
+burpsuite => Para interceptar solicitudes
+firefox => Navegador para pentesting
+crtl + r => enviar y ver la respuesta en burpsuite
+'or 1=1-- -
+
