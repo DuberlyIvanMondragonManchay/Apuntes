@@ -7,7 +7,8 @@ df => Lista los medios y discos que tenemos conectados
 sudo umount => Desmotamos el USB
 sudo mkfs.vfat -n 'du' -I /dev/sdb1 => Formateamos el USB
 ------------------------
-
+Eliminar repositorios problematicos
+ls /etc/apt/sources.list.d/ => En esta ruta se encuentran los repositorios y eliminarlos para que no causen problemas
 
 burpsuite => Para interceptar solicitudes
 firefox => Navegador para pentesting
