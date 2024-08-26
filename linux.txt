@@ -14,3 +14,13 @@ firefox => Navegador para pentesting
 crtl + r => enviar y ver la respuesta en burpsuite
 'or 1=1-- -
 
+-----------SQL Injection----------
+Detectar vulnerabilidades de inyección SQL
+ ' comilla simple
+OR 1=1 Y OR 1=2
+
+-- => se interpreta como compentario en sql
+
+academy.net/filter?category=%27+OR+1=1-- => Filtra los todos productos
+SELECT * FROM products WHERE category = 'Gifts' AND released = 1
+
