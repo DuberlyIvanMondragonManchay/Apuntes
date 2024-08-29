@@ -1,3 +1,4 @@
+lofi => Musica tranqui 
 sudo apt remove --purge => Eliminar un paquete 
 sudo apt autoremove => Eliminar las depenmdencias que ya no se usan
 whoami => Ver el usuario con el que estamos
@@ -32,3 +33,4 @@ adminitrator'-- => Entrar con el usuario administrador y que ignore la contraseÃ
 ------Ataques de fuerza bruta por ip------------
 X-Forwarded-For => Agregar esto en los headers para cambiar de IP
 
+ctr + shit + u => urldecoder burpsuite
