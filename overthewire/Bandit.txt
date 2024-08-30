@@ -1,0 +1,15 @@
+ssh bandit0@bandit.labs.overthewire.org -p 2220 => Conectarse a al máquina por ssh
+bandit0 => bandit0
+bandit1 => ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+bandit2 => 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+bandit3 => MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+bandit4 => 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+cat $(pwd)/- => Leer archivo con nombre -
+cat "spaces in this file name" => Leer archivos con espacios
+cat spac* => Leer archivos que empicen con algo y da igual lo que sigue
+find . -type f => Con esto buscamos solo ficheros el . indica el direcitorio actual
+
+t½m => El modo osea el permiso asignado
+find . -type f -printf "%f\t%t\t%u\t%p\t%m\n" | column -t => Esto da un formato de salida 
+
+----Privilegios -----
