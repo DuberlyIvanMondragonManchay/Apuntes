@@ -34,3 +34,9 @@ adminitrator'-- => Entrar con el usuario administrador y que ignore la contraseÃ
 X-Forwarded-For => Agregar esto en los headers para cambiar de IP
 
 ctr + shit + u => urldecoder burpsuite
+
+
+-------VPN----------
+https://www.vpnbook.com/freevpn => PÃ¡gina de vpn gratis
+sudo openvpn vpnbook-us1-udp25000.ovp
+
