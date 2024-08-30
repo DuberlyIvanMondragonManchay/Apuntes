@@ -1,0 +1,3 @@
+/etc/passwd => Archivo donde se encuentran las contraseñas
+sudo useradd -m jack => Creamos un usuario
+man useradd => 
