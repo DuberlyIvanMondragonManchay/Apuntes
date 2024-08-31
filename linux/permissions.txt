@@ -1,3 +1,24 @@
-/etc/passwd => Archivo donde se encuentran las contraseñas
-sudo useradd -m jack => Creamos un usuario
-man useradd => 
+cat /etc/passwd => Archivo donde se encuentran las contraseñas
+sudo useradd -m jack => Creamos un usuario el comando -m crea la carpeta home si no existe
+man useradd => podemos ver ayuda de comandos especificos
+sudo /home => Aquí se crea una carpeta con el nombre del usuario cuando ejecutamos el -m al momento de crear un nuevo usuario
+la carpeta home es dende se encuntran los directorios de Desktop| Dowloads | Documents | Postman
+sudo passwd jack => Con esto asignamos una contraseña al usuario jack
+sudo nano /etc/shadow => Archivo donde se almacenan las contraseñas se guardan encriptadas
+sudo nano /etc/group => En este archivo se encuentran los grupos donde el identificador < 1000 son los que crea el sistema y >1000 son los que nosotros creamos todo usario que se crea automaticamente tiene un grupo asignado a su nombre.
+
+sudo groupadd devs => Creamos un grupo llamado devs
+sudo usermod -aG dev jack => Agregamos el usuario jack al grupo devs
+sudo userdel jack => Eliminamos un usuario y debemos eliminar la carpeta home de forma manual
+sudo rm -R jack => ELimnams la carpeta manualmente
+
+touch cambiar.txt => Creamos un archivo 
+-rw-rw-r-- => Automaticamente se asignan estos permisos por defecto
+Propietario => Leer, escribir
+Grupo => Leer, escribir
+Otros => Leer
+mkdir /home/work => Creamos una carpeta en esta ruta y dentro creamos los siguientes archivos
+nano file_read.txt => Este archivo será solo de lectura para todos los usuarios 
+-rw-r--r-- => Permisos creados automaticamente todo pueden leer solo el propietario escribir
+naoi
+chmod -rw-rw-rw- => Permiso de lectura y escritura para todos
