@@ -1,0 +1,2 @@
+tail -n 2 /etc/passwd => Con este comando veremos las últimas lineas de un archivo
+mv file_read.txr file_read.txt => Renombrar el nombre de un archivo
