@@ -1,0 +1,4 @@
+-Ingeniería Social: La Ciencia del Hacking Humano pdf
+-Fundamentos de Linux para Hackers: Iniciación a la Red, Scripting y Seguridad en Kali pdf
+-Black Hat Python, 2da Edición: Programación en Python para Hackers y Pentesters
+-Gray Hat Hacking: El Manual del Hacker Ético, Sexta Edición
