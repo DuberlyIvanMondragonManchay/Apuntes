@@ -9,5 +9,7 @@ install.packages("dplyr") => Libreria que nos permite hacer el filtrado de datos
 new_data = filter(data,Genero=="Masculino") => Filtrar datos y obtener un nuevo objeto
 
 https://rsanchezs.gitbooks.io/rprogramming/content/chapter9/filter.html =>Operadores logicos R
-
 nrow(filter(data,Ingreso>5.0 & Sucursal=="San Isidro")) 
+
+str(data) => Permite ver la estrura interna de un objeto
+
