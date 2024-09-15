@@ -1,0 +1,4 @@
+-----Atajos------
+return + enter => Abir una nueva terminal
+
+return + alt + r => Resetear la consola
