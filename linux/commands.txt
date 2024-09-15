@@ -1,6 +1,10 @@
 tail -n 2 /etc/passwd => Con este comando veremos las últimas lineas de un archivo
 mv file_read.txr file_read.txt => Renombrar el nombre de un archivo
 lsusb => Sirve para listar los dispositivos usb conectados
+-----------DISPLAY----------
 xrandr => Lista los monitores que tenemos conectados
 xrandr --output eDP --auto => Habilitar monitor
 xrandr --output eDP --off => Desabilitar monitor
+-----------BOLUMEN----------
+amixer sset Master 10%+ => Subir el volumen un 10%
+amixer sset Master 10%- => Vajar el volumen un 10%
