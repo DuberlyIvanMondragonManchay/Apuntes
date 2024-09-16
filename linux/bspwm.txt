@@ -3,3 +3,5 @@ return + enter => Abir una nueva terminal
 
 return + alt + r => Resetear la consola
 Cambiar de ventana => window + 1 +2 +3
+
+ctrl + windows + (Rigth+left+Up)
