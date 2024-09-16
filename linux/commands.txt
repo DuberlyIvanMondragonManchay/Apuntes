@@ -9,3 +9,4 @@ xrandr --output eDP --off => Desabilitar monitor
 amixer sset Master 10%+ => Subir el volumen un 10%
 amixer sset Master 10%- => Vajar el volumen un 10%
 xset -b => Desactivar ese pitido feo
+pkill -USR1 -x sxhkd => Reiniciar el sxhkd
