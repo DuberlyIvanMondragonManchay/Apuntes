@@ -1,5 +1,16 @@
 -----Atajos------
-return + enter => Abir una nueva terminal
+super => Windows
+return => Enter
+
+Super + Return => Abir una nueva terminal
+Super + d => Abrir el rofi
+Super + alt + q => Resetear el bspwm
+Super + w => Cerrar ventana
+Super + m => Ventana completa (full screen)
+Super + g => Itercambiar el nodo actual por la ventana más grande
+Super + t => Regresar la pantalla a su posición
+Super + s => Establecer el estado de la pantalla
+
 
 return + alt + r => Resetear la consola
 Cambiar de ventana => window + 1 +2 +3
