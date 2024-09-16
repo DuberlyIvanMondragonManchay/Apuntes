@@ -10,7 +10,9 @@ Super + m => Ventana completa (full screen)
 Super + g => Itercambiar el nodo actual por la ventana más grande
 Super + t => Regresar la pantalla a su posición
 Super + s => Establecer el estado de la pantalla
-
+Super + shift + (Left,Down+Up+Right) => Mover de posición la ventana
+Super + ctrl + alt + (Left,Down+Up+Right) => Preseleccionado
+Super + ctrl + alt + space => Cacelar el Preseleccionado
 
 return + alt + r => Resetear la consola
 Cambiar de ventana => window + 1 +2 +3
