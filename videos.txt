@@ -1,0 +1,2 @@
+Apuntes
+mkdir poo && cd poo;
