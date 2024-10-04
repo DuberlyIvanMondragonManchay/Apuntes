@@ -7,3 +7,9 @@ ufw app list => Lista los perfiles que tengo displonibles actuales
 ufw allow OpenSSH => Hacemos que el firewall permita conexiones ssh
 ufw enable => Habilita el firewall
 ufw status => Ver lo que esta permitido en el firewall
+ufw status numbered => Enumber las reglas de firewall
+ufw status verbose => Nos muestra lista además de los puertos
+ufw status 2 => ELimina la regla 2 de la lista
+ufw  allow from 10.0.2.15 => Permitir una dirección ip  y luego aplicar los cambios con ufw enable y systemctl reload apache2
+
+
