@@ -1,0 +1,9 @@
+sudo systemctl stop apache2 => Detiene el sevidor de apache2
+sudo systemctl start apache2 => Inciar el servidor de apache2
+sudo systemctl reload apache2 => Recarga el servidor de apache2
+
+Configuración del firewall 
+ufw app list => Lista los perfiles que tengo displonibles actuales
+ufw allow OpenSSH => Hacemos que el firewall permita conexiones ssh
+ufw enable => Habilita el firewall
+ufw status => Ver lo que esta permitido en el firewall
