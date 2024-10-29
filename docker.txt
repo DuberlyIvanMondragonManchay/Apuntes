@@ -14,7 +14,7 @@ docker rm $(docker ps -aq) => importante solo funciona desde la powerShell en wi
 docker stop $(docker ps -aq) => Para parar la ejecucion de todos los contenedores 
 
 docker pull httpd => Esto es la imagen de apache
-docker run -d -p 3306:3306 --name mydatabase mysql => Esto es para usar mysql y asignarle 
+docker run --name mymysql -p 3306:3306  -e MYSQL_ROOT_PASSWORD=duberly2004 -d mysql => Esto es para usar mysql y asignarle 
 docker run --name mymysql -e MYSQL_ROOT_PASSWORD=duberly2004 -d mysql => Esto para 
 ejecutar mysql
 docker exec mymysql /usr/bin/mysqldump -u root --password=duberly2004 db_digcru > backup.sql => Para exportar una base de datos desde un contenedor
