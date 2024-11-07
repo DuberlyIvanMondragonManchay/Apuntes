@@ -8,3 +8,6 @@ apt install python3-xyz
 apt install python3-virtualenv
 apt install python3-venv
 pip install -r requirements.txt
+prisma generate
+apt-get install -y libgl1
+apt-get update && apt-get install -y libgl1 libglib2.0-0
