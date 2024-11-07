@@ -66,3 +66,16 @@ __pycache__/
 .DS_Store
 *.log
 
+
+
+#.env api
+
+DATABASE_URL="mysql://root:duberly2004@mymysql:3306/db_project"
+API_URL = http://127.0.0.1:5000
+SECRET_KEY = "$2b$a0OAHPVhhy00nh4hdgB"
+
+
+#.env frontend
+VITE_API_URL = http://45.79.200.91/:5000
+
+#No olvidar volver a compilar para que el dist tome de nuevo en .env 
