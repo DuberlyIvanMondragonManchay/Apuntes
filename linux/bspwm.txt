@@ -22,3 +22,5 @@ Cambiar de ventana => window + 1 +2 +3
 ctrl + windows + (Rigth+left+Up)
 
 super + f => FUll screen
+
+setxkbmap -layout latam  => Cambiar el idioma a español latinoamericano
