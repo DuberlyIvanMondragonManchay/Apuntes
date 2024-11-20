@@ -16,3 +16,4 @@ echo "deb http://deb.debian.org/debian unstable main" | sudo tee -a /etc/apt/sou
 sudo apt update
 sudo apt install firejail
 ------
+xdotool => Herramienta para jugar con atajos de teclado
