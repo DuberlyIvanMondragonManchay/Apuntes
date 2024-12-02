@@ -12,5 +12,6 @@ ufw status verbose => Nos muestra lista además de los puertos
 ufw status 2 => ELimina la regla 2 de la lista
 ufw  allow from 10.0.2.15 => Permitir una dirección ip  y luego aplicar los cambios con ufw enable y systemctl reload apache2
 sudo ufw allow from 192.168.18.134 to any port 80 => Permite acceso al puerto 80 desde una direccion especifica
+nc -zv 192.168.18.134 3006 => Ver si el puerto esta en escucha con netcat
 
 
