@@ -20,3 +20,4 @@ ejecutar mysql
 docker exec mymysql /usr/bin/mysqldump -u root --password=duberly2004 db_digcru > backup.sql => Para exportar una base de datos desde un contenedor
 cat db_digcru_script.sql | docker exec -i mymysql /usr/bin/mysql -u root --password=duberly2004 db_digcru => Para importar datos a una base de datos docker
 https://github.com/gdiazes/docker/blob/main/docker/00Network => Más info
+docker exec servidor env => Ver las variables de entorno de un contenedor
