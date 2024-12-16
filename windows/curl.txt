@@ -1,1 +1,3 @@
 Test-NetConnection -ComputerName 192.168.18.182 -Port 445 => Verifica si el puerto de una maquina esta activo
+impacket-smbserver smbFolder $(pwd) -smb2support -username duberly -password duberly123 => Crear una carpeta compartida
+net use Z: \\192.168.1.50\smbFolder /user:duberly duberly123 => Conectarese desde windows a la cartpeta compartida
