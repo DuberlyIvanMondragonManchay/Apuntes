@@ -17,3 +17,4 @@ sudo apt update
 sudo apt install firejail
 ------
 xdotool => Herramienta para jugar con atajos de teclado
+echo 250 | sudo tee /sys/class/backlight/amdgpu_bl0/brightness => Subir el brillo a la pantalla
