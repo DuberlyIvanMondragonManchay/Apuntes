@@ -1,1 +1,2 @@
 curl http://localhost:3000/users | json_pp => Formatear en json
+curl -4 ifconfig.me => obtener dirección ipv4
