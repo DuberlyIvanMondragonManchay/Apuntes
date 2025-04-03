@@ -1,0 +1,5 @@
+ctrl + w => Buscar 
+ctrl + A => Establece una marca de seleccion
+ctrl + 6 => Copiar texto
+ctrl + u => Pegar texto
+ctrl + k => Cortar texto
