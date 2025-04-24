@@ -1,0 +1,9 @@
+# Crear un directorio en el host actual
+- name: Debugging Variables
+  hosts: localhost
+  tasks:
+    - name: Create directory
+      file:
+        path: /home/kali/folder-example
+        state: directory
+        mode: "0755"
