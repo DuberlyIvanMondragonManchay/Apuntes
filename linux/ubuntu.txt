@@ -1,1 +1,3 @@
 ip address => Obtener la ip en ubuntu
+systemctl status sshd => Ver el estado de ssh
+systemctl enable sshd =>  Activar el ssh
