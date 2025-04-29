@@ -1,0 +1,5 @@
+copy con file.txt | touch file.txt
+tail file.txt | cat file.txt
+del file.txt | rm file.txt
+php -S 0.0.0.0:80 => Crear un servidor de php
+scp -i gcp_private_key -r projects/node_modules/ 'materiagris\dmondragon'@35.225.164.118:/home/'materiagris\dmondragon' => Compartir archivos desde mi pc local a un server en la nube
