@@ -24,3 +24,4 @@ ctrl + windows + (Rigth+left+Up)
 super + f => FUll screen
 
 setxkbmap -layout latam  => Cambiar el idioma a español latinoamericano
+/usr/share/desktop-base/kali-theme/login => Fondo de bloqueo
