@@ -25,3 +25,4 @@ super + f => FUll screen
 
 setxkbmap -layout latam  => Cambiar el idioma a español latinoamericano
 /usr/share/desktop-base/kali-theme/login => Fondo de bloqueo
+/usr/share/backgrounds/kali/fondo.png => Fondo de pantalla
