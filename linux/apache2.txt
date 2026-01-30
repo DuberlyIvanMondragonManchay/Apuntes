@@ -4,13 +4,13 @@ sudo systemctl reload apache2 => Recarga el servidor de apache2
 
 Configuración del firewall 
 ufw app list => Lista los perfiles que tengo displonibles actuales
-ufw allo ssh => Hacemos que el firewall permita conexiones ssh
+ufw allow ssh => Hacemos que el firewall permita conexiones ssh
 ufw allow OpenSSH => Hacemos que el firewall permita conexiones ssh (aveces no te deja acceder)
 ufw enable => Habilita el firewall
 ufw status => Ver lo que esta permitido en el firewall
 ufw status numbered => Enumber las reglas de firewall
 ufw status verbose => Nos muestra lista además de los puertos
-ufw status 2 => ELimina la regla 2 de la lista
+ufw delete 2 => ELimina la regla 2 de la lista
 ufw  allow from 10.0.2.15 => Permitir una dirección ip  y luego aplicar los cambios con ufw enable y systemctl reload apache2
 sudo ufw allow from 192.168.18.134 to any port 80 => Permite acceso al puerto 80 desde una direccion especifica
 nc -zv 192.168.18.134 3006 => Ver si el puerto esta en escucha con netcat
